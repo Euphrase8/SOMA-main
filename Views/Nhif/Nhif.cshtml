@@ -1,0 +1,87 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.dashboardpack.com/adminty-html/default/ready-registration-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Apr 2024 13:44:12 GMT -->
+
+<head>
+    <title>NHIF Details | SOMA </title>
+
+
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="#">
+    <meta name="keywords"
+        content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+
+    <link rel="icon" href="../../files/assets/images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../files/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../files/assets/icon/themify-icons/themify-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="../../files/assets/icon/icofont/css/icofont.css">
+
+    <link rel="stylesheet" type="text/css" href="../../files/assets/icon/feather/css/feather.css">
+
+    <link rel="stylesheet" type="text/css" href="../../files/assets/pages/j-pro/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="../../files/assets/pages/j-pro/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../files/assets/pages/j-pro/css/j-pro-modern.css">
+
+    <link rel="stylesheet" type="text/css" href="../../files/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../files/assets/css/jquery.mCustomScrollbar.css">
+</head>
+
+@{
+    Layout = null;
+}
+<body>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>NHIF</h3>
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary float-right">Back Home</a>
+                </div>
+                <div class="card-body">
+                    <h4>NHIF Card Details</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>NHIF Card Number</td>
+                                <td>101503445384</td>
+                            </tr>
+                            <tr>
+                                <td>Control Number</td>
+                                <td>994001981491</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Amount</td>
+                                <td>50400</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Status</td>
+                                <td><span class="badge badge-success">PAID</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="@Url.Action("FeePayment", "Home")" class="btn btn-primary">Go Back Fee Payment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

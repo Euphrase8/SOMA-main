@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+}
+
+@{
+    Layout = null;
+}
+
+<div class="register-box">
+  <div class="card card-outline card-secondary">
+    <div class="card-header text-center">
+      <div class="col-12" style="text-align: center">
+        <span class="col-12 " style=" text-align: center; background-color:white;font-size:17px;text-shadow:0.2px 0.2px 0.2px #4C4B4D;
+            font-family: 'Seta Reta NF';
+            font-weight: 600;
+            color: #4C4B4D; !important">
+          DAR-ES-SALAAM INSTITUTE OF TECHNOLOGY
+        </span>
+      </div>
+      <img src="/images/soma-icon.png" alt="" style="width:60px;height:60px">
+    </div>
+    <div class="card-body">
+      <form action="/auth/register" method="post">
+        <input type="hidden" name="csrf" value="">
+        <div class="input-group mb-3">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <label for="csee_number">
+          FIV Index Number
+        </label>
+        <div class="input-group mb-3" id="csee_number">
+          <input type="text" class="form-control" id="fiv_index_number" name="fiv_index_number"
+            placeholder="eg.S0629/0200/2015">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-id-card"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <i class="fas fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <div id="popover-password">
+          <p>Password Strength: <span id="result"> </span></p>
+          <div class="progress" style="height:5px;">
+            <div id="password-strength" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+              aria-valuemax="100" style="width:0%"></div>
+          </div>
+          <p>&nbsp;</p>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" id="confirm-password" name="confirm_password" class="form-control"
+            placeholder="Retype password" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <i class="fas fa-eye-slash" id="toggleConfirmPassword" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <p id="popover-cpassword" style="display:none;color:red;"></p>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <label for="agreeTerms">
+                I agree to the <a href="#">terms</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <button type="submit" class="btn btn-block" id="sign-up" style="background-color:#315c72 !important"><span
+                style="color:white;">Register</span></button>
+          </div>
+
+        </div>
+
+      </form>
+      <a href="/auth/login" class="text-center">I already have a membership</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <hr>
+  &copy; 2024 DIT Student Records Management System
+</div>
+
